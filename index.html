@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Biz Online USA — Built to Sell, Not Just Sit There.</title>
+  <meta name="description" content="Get Biz Online USA — Professional websites + promo videos for US small businesses. WhatsApp integration, payment gateways, and more. Starting at $499. Visit getbizonlineusa.com" />
+  <meta property="og:title" content="Get Biz Online USA — Built to Sell, Not Just Sit There." />
+  <meta property="og:description" content="We build professional websites + promo videos for US small businesses. WhatsApp, payments, and more. Starting at $499." />
+  <meta property="og:url" content="https://getbizonlineusa.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://js.stripe.com/v3/" defer></script>
+</head>
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">
+        <span class="logo-get">GET</span>
+        <span class="logo-biz">BIZ</span>
+        <span class="logo-online">ONLINE USA</span>
+      </a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#pricing" class="nav__cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+      <div class="hero__glow glow1"></div>
+      <div class="hero__glow glow2"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__flag">🇺🇸 Proudly Serving US Small Businesses Nationwide</div>
+      <h1 class="hero__title">
+        <span class="hero__title-line">Built to</span>
+        <span class="hero__title-accent">Sell.</span>
+        <span class="hero__title-line hero__title-small">Not just sit there.</span>
+      </h1>
+      <p class="hero__sub">
+        We build professional websites + promo videos for small businesses —
+        with WhatsApp integration and payment gateways. <strong>Everything for $499.</strong>
+      </p>
+      <div class="hero__actions">
+        <a href="#pricing" class="btn btn--gold">Claim Your Spot →</a>
+        <a href="#portfolio" class="btn btn--ghost">See Our Work</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><span class="stat__num" data-target="47">0</span><span class="stat__label">Sites Built</span></div>
+        <div class="stat__divider"></div>
+        <div class="stat"><span class="stat__num" data-target="100">0</span><span class="stat__label">Goal</span></div>
+        <div class="stat__divider"></div>
+        <div class="stat"><span class="stat__num" data-target="499">0</span><span class="stat__label">Fixed Price $</span></div>
+      </div>
+    </div>
+    <div class="hero__phone-wrap">
+      <div class="hero__phone">
+        <div class="phone__notch"></div>
+        <div class="phone__screen">
+          <div class="phone__bar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          </div>
+          <div class="phone__hero-block">
+            <div class="phone__biz-name">YOUR BUSINESS</div>
+            <div class="phone__biz-sub">Professional Website</div>
+          </div>
+          <div class="phone__cta-btn">Book Now</div>
+          <div class="phone__wa"><span class="wa-icon">●</span> WhatsApp Us</div>
+          <div class="phone__pay">💳 Pay Online</div>
+          <div class="phone__footer">getbizonlineusa.com</div>
+        </div>
+      </div>
+      <div class="hero__phone-glow"></div>
+    </div>
+  </section>
+
+  <!-- ═══ TICKER ═══ -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span>🚀 Website + Video</span><span>★</span>
+      <span>💬 WhatsApp Integration</span><span>★</span>
+      <span>💳 Payment Gateway</span><span>★</span>
+      <span>📱 Mobile Optimized</span><span>★</span>
+      <span>🇺🇸 Serving All 50 States</span><span>★</span>
+      <span>📈 Built to Sell</span><span>★</span>
+      <span>🚀 Website + Video</span><span>★</span>
+      <span>💬 WhatsApp Integration</span><span>★</span>
+      <span>💳 Payment Gateway</span><span>★</span>
+      <span>📱 Mobile Optimized</span><span>★</span>
+      <span>🇺🇸 Serving All 50 States</span><span>★</span>
+      <span>📈 Built to Sell</span><span>★</span>
+    </div>
+  </div>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">What We Do</div>
+        <h2 class="section-title">Everything Your Business Needs to Win Online</h2>
+        <p class="section-sub">We're not just web designers. We're your digital growth team.</p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">🖥️</div>
+          <h3>Professional Website</h3>
+          <p>Multi-page, mobile-first website built to convert visitors into paying customers. Fast, clean, and branded for your business.</p>
+          <ul class="service-card__list">
+            <li>✓ Mobile responsive</li>
+            <li>✓ SEO optimized</li>
+            <li>✓ Fast loading</li>
+            <li>✓ Custom domain ready</li>
+          </ul>
+        </div>
+        <div class="service-card service-card--featured">
+          <div class="service-card__badge">Most Popular</div>
+          <div class="service-card__icon">🎬</div>
+          <h3>Promo Video</h3>
+          <p>A 30–60 second professional promo video about YOUR business. Ready to post on Instagram, Facebook, and your website.</p>
+          <ul class="service-card__list">
+            <li>✓ Brand storytelling</li>
+            <li>✓ Social media ready</li>
+            <li>✓ Professional voiceover</li>
+            <li>✓ Custom music</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">💬</div>
+          <h3>WhatsApp Integration</h3>
+          <p>Let customers message you directly from your website with one tap. Never miss a lead again.</p>
+          <ul class="service-card__list">
+            <li>✓ One-click contact</li>
+            <li>✓ Auto-greeting messages</li>
+            <li>✓ Business hours setup</li>
+            <li>✓ WhatsApp Business</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">💳</div>
+          <h3>Payment Gateway</h3>
+          <p>Accept payments directly on your website via Stripe or PayPal. Get paid while you sleep.</p>
+          <ul class="service-card__list">
+            <li>✓ Stripe / PayPal</li>
+            <li>✓ Secure checkout</li>
+            <li>✓ Invoice system</li>
+            <li>✓ Mobile payments</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">📈</div>
+          <h3>SEO & Google Setup</h3>
+          <p>Get found on Google. We set up your Google Business Profile and basic on-page SEO so local customers can find you.</p>
+          <ul class="service-card__list">
+            <li>✓ Google Business Profile</li>
+            <li>✓ Local SEO basics</li>
+            <li>✓ Meta tags optimized</li>
+            <li>✓ Sitemap submission</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">🛡️</div>
+          <h3>Monthly Care Plan</h3>
+          <p>We keep your site running, updated, and secure every month. You focus on your business — we handle the tech.</p>
+          <ul class="service-card__list">
+            <li>✓ Security updates</li>
+            <li>✓ Content edits</li>
+            <li>✓ Hosting management</li>
+            <li>✓ Monthly report</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PRICING ═══ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Transparent Pricing</div>
+        <h2 class="section-title">Simple. Honest. No Hidden Fees.</h2>
+        <p class="section-sub">Pick your package and let's get your business online — fast.</p>
+      </div>
+      <div class="pricing__grid">
+        <div class="pricing-card">
+          <div class="pricing-card__tier">Starter</div>
+          <div class="pricing-card__price"><span class="price-dollar">$</span>299</div>
+          <div class="pricing-card__desc">Perfect for getting started online fast.</div>
+          <ul class="pricing-card__features">
+            <li><span class="check">✓</span> Single-page website</li>
+            <li><span class="check">✓</span> Mobile responsive</li>
+            <li><span class="check">✓</span> WhatsApp button</li>
+            <li><span class="check">✓</span> Contact form</li>
+            <li><span class="check">✓</span> Custom domain setup</li>
+            <li class="dim"><span>✗</span> Promo video</li>
+            <li class="dim"><span>✗</span> Payment gateway</li>
+          </ul>
+          <button class="btn btn--outline" onclick="handleCheckout('starter')">Get Started</button>
+        </div>
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__popular">⭐ Best Value</div>
+          <div class="pricing-card__tier">Business</div>
+          <div class="pricing-card__price"><span class="price-dollar">$</span>499</div>
+          <div class="pricing-card__desc">The complete package. Everything you need.</div>
+          <ul class="pricing-card__features">
+            <li><span class="check">✓</span> Multi-page website</li>
+            <li><span class="check">✓</span> Mobile responsive</li>
+            <li><span class="check">✓</span> WhatsApp integration</li>
+            <li><span class="check">✓</span> Payment gateway</li>
+            <li><span class="check">✓</span> 60-sec promo video</li>
+            <li><span class="check">✓</span> Basic SEO setup</li>
+            <li><span class="check">✓</span> Google Business setup</li>
+          </ul>
+          <button class="btn btn--gold" onclick="handleCheckout('business')">Claim This Package →</button>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card__tier">Premium</div>
+          <div class="pricing-card__price"><span class="price-dollar">$</span>999</div>
+          <div class="pricing-card__desc">For businesses ready to dominate their market.</div>
+          <ul class="pricing-card__features">
+            <li><span class="check">✓</span> Everything in Business</li>
+            <li><span class="check">✓</span> E-commerce store</li>
+            <li><span class="check">✓</span> 3 promo videos</li>
+            <li><span class="check">✓</span> Advanced SEO</li>
+            <li><span class="check">✓</span> Email marketing setup</li>
+            <li><span class="check">✓</span> 3 months maintenance</li>
+            <li><span class="check">✓</span> Priority support</li>
+          </ul>
+          <button class="btn btn--outline" onclick="handleCheckout('premium')">Get Started</button>
+        </div>
+      </div>
+      <div class="addons">
+        <div class="addons__title">+ Add-Ons</div>
+        <div class="addons__grid">
+          <div class="addon">📅 Monthly Care Plan <strong>$29/mo</strong></div>
+          <div class="addon">🎬 Extra Promo Video <strong>$99</strong></div>
+          <div class="addon">📧 Email Setup <strong>$49</strong></div>
+          <div class="addon">📊 Analytics Dashboard <strong>$79</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PORTFOLIO ═══ -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Our Work</div>
+        <h2 class="section-title">100 Websites Challenge</h2>
+        <p class="section-sub">We're on a mission to get 100 US small businesses online. Here's the progress.</p>
+      </div>
+      <div class="portfolio__counter">
+        <div class="counter__bar-wrap">
+          <div class="counter__bar" style="--pct: 47%"></div>
+        </div>
+        <div class="counter__nums">
+          <span class="counter__done">47 Done</span>
+          <span class="counter__left">53 Spots Left</span>
+        </div>
+      </div>
+      <div class="portfolio__grid">
+        <div class="portfolio-card">
+          <div class="portfolio-card__num">#001</div>
+          <div class="portfolio-card__type">🍕 Restaurant</div>
+          <div class="portfolio-card__name">Mario's Pizzeria</div>
+          <div class="portfolio-card__tag">Website + Video + Payments</div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card__num">#002</div>
+          <div class="portfolio-card__type">✂️ Salon</div>
+          <div class="portfolio-card__name">Glow Beauty Studio</div>
+          <div class="portfolio-card__tag">Website + WhatsApp + Booking</div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card__num">#003</div>
+          <div class="portfolio-card__type">💪 Gym</div>
+          <div class="portfolio-card__name">Iron Peak Fitness</div>
+          <div class="portfolio-card__tag">Website + Video + Payments</div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card__num">#004</div>
+          <div class="portfolio-card__type">🏠 Real Estate</div>
+          <div class="portfolio-card__name">Summit Realty Group</div>
+          <div class="portfolio-card__tag">Website + WhatsApp + SEO</div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card__num">#005</div>
+          <div class="portfolio-card__type">🎂 Bakery</div>
+          <div class="portfolio-card__name">Sweet & Simple Cakes</div>
+          <div class="portfolio-card__tag">Website + Video + Payments</div>
+        </div>
+        <div class="portfolio-card portfolio-card--cta">
+          <div class="portfolio-card__num">Your #</div>
+          <div class="portfolio-card__type">🏪 Your Business</div>
+          <div class="portfolio-card__name">Could Be Next</div>
+          <a href="#pricing" class="btn btn--gold btn--sm">Claim Your Spot</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Client Love</div>
+        <h2 class="section-title">Small Businesses. Real Results.</h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testi">
+          <div class="testi__stars">★★★★★</div>
+          <p>"I had zero online presence. Now I get 15+ inquiries a week through my website. The WhatsApp button alone changed my business."</p>
+          <div class="testi__author">— Maria G., Glow Beauty Studio</div>
+        </div>
+        <div class="testi">
+          <div class="testi__stars">★★★★★</div>
+          <p>"They built my restaurant website AND made a promo video in 48 hours. My Instagram went from 200 to 2,000 followers in a month."</p>
+          <div class="testi__author">— Tony M., Mario's Pizzeria</div>
+        </div>
+        <div class="testi">
+          <div class="testi__stars">★★★★★</div>
+          <p>"$499 for a professional website with online payments? I called three agencies before — they all quoted $3,000+. This is a no-brainer."</p>
+          <div class="testi__author">— James K., Iron Peak Fitness</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__left">
+          <div class="section-tag">Get In Touch</div>
+          <h2 class="section-title">Ready to Get Your Business Online?</h2>
+          <p class="section-sub">Fill out the form and we'll get back to you within 24 hours. Or find us on Instagram.</p>
+          <a href="https://instagram.com/GetBizOnline" class="btn btn--wa" target="_blank" rel="noopener">
+            📸 Message us on Instagram
+          </a>
+          <div class="contact__info">
+            <div class="contact__info-item">📧 hello@getbizonlineusa.com</div>
+            <div class="contact__info-item">🌐 getbizonlineusa.com</div>
+            <div class="contact__info-item">📍 Serving All 50 US States Online</div>
+            <div class="contact__info-item">⏱️ Response within 24 hours</div>
+          </div>
+        </div>
+        <div class="contact__right">
+          <form class="contact-form" id="contactForm" onsubmit="handleContactForm(event)">
+            <div class="form-group">
+              <label>Business Name</label>
+              <input type="text" name="business" placeholder="Mario's Pizzeria" required />
+            </div>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" name="name" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="john@business.com" required />
+            </div>
+            <div class="form-group">
+              <label>Phone / WhatsApp</label>
+              <input type="tel" name="phone" placeholder="+1 (555) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label>Package Interest</label>
+              <select name="package">
+                <option value="">Select a package...</option>
+                <option value="starter">Starter — $299</option>
+                <option value="business">Business — $499</option>
+                <option value="premium">Premium — $999</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Tell us about your business</label>
+              <textarea name="message" rows="4" placeholder="What does your business do? What do you need help with?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--gold btn--full">Send Message →</button>
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! We'll be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#home" class="nav__logo">
+            <span class="logo-get">GET</span>
+            <span class="logo-biz">BIZ</span>
+            <span class="logo-online">ONLINE USA</span>
+          </a>
+          <p>Built to sell, not just sit there.</p>
+          <p class="footer__nation">🇺🇸 Small Business Is Proud of the Nation</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <div class="footer__col-title">Services</div>
+            <a href="#services">Websites</a>
+            <a href="#services">Promo Videos</a>
+            <a href="#services">WhatsApp Setup</a>
+            <a href="#services">Payment Gateway</a>
+          </div>
+          <div class="footer__col">
+            <div class="footer__col-title">Company</div>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+            <a href="#home">100 Sites Challenge</a>
+          </div>
+          <div class="footer__col">
+            <div class="footer__col-title">Follow Us</div>
+            <a href="https://instagram.com/GetBizOnline" target="_blank" rel="noopener">Instagram</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Get Biz Online USA — getbizonlineusa.com. All rights reserved.</span>
+        <span>Privacy Policy · Terms of Service</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ CHATBOT ═══ -->
+  <div class="chatbot" id="chatbot">
+    <button class="chatbot__toggle" id="chatToggle" aria-label="Open chat">
+      <span class="chatbot__icon-open">💬</span>
+      <span class="chatbot__icon-close">✕</span>
+    </button>
+    <div class="chatbot__window" id="chatWindow">
+      <div class="chatbot__header">
+        <div class="chatbot__avatar">GBO</div>
+        <div class="chatbot__info">
+          <div class="chatbot__name">Get Biz Online USA</div>
+          <div class="chatbot__status"><span class="online-dot"></span> Online now</div>
+        </div>
+        <button class="chatbot__close" id="chatClose">✕</button>
+      </div>
+      <div class="chatbot__messages" id="chatMessages">
+        <div class="chat-msg chat-msg--bot">
+          <div class="chat-bubble">👋 Hi! Welcome to Get Biz Online USA. How can I help you today?</div>
+        </div>
+        <div class="chat-msg chat-msg--bot">
+          <div class="chat-bubble">I can answer questions about our packages, pricing, or help you get started. What's on your mind?</div>
+        </div>
+        <div class="chat-quick-replies" id="quickReplies">
+          <button class="quick-reply" onclick="sendQuick('What packages do you offer?')">📦 Packages</button>
+          <button class="quick-reply" onclick="sendQuick('How much does it cost?')">💰 Pricing</button>
+          <button class="quick-reply" onclick="sendQuick('How long does it take?')">⏱️ Timeline</button>
+        </div>
+      </div>
+      <div class="chatbot__input-wrap">
+        <input type="text" class="chatbot__input" id="chatInput" placeholder="Type a message..." />
+        <button class="chatbot__send" id="chatSend">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PAYMENT MODAL ═══ -->
+  <div class="modal-overlay" id="paymentModal">
+    <div class="modal">
+      <button class="modal__close" id="modalClose">✕</button>
+      <h3 class="modal__title">Complete Your Order</h3>
+      <div class="modal__package" id="modalPackage"></div>
+      <div id="stripe-card-element"></div>
+      <div id="card-errors" class="card-errors"></div>
+      <button class="btn btn--gold btn--full" id="payBtn" onclick="submitPayment()">Pay Now →</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
