@@ -1,7 +1,7 @@
 /* ════════════════════════════════════════════════════════
    GET BIZ ONLINE USA — app.js
    getbizonlineusa.com
-   Instagram: @GetBizOnline
+   Instagram: @GetBizOnlineusa
 ════════════════════════════════════════════════════════ */
 
 const CONFIG = {
