@@ -8,8 +8,8 @@ const CONFIG = {
   STRIPE_PUBLISHABLE_KEY: 'pk_test_REPLACE_WITH_YOUR_STRIPE_KEY',
   AI_API_ENDPOINT:        'https://YOUR_BACKEND/api/chat',
   WHATSAPP_NUMBER:        '',   // Add your number later e.g. '14045551234'
-  CONTACT_FORM_ENDPOINT:  'https://formspree.io/f/REPLACE_WITH_YOUR_FORMSPREE_ID',
-  INSTAGRAM:              'https://instagram.com/GetBizOnline',
+  CONTACT_FORM_ENDPOINT:  'https://formspree.io/f/formspree.io/f/xojzkloe',
+  INSTAGRAM:              'https://instagram.com/GetBizOnlineusa',
 };
 
 const PACKAGES = {
